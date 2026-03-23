@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Green Lab: Challenge</title>
+    <!-- LINK CORRIGIDO ABAIXO: Adicionado /3.0/loader.js -->
+    <script src="https://cjrtnc.leaningtech.com"></script>
+    <style>
+        body, html { margin: 0; padding: 0; width: 100%; height: 100%; overflow: hidden; background: #000; }
+        #container { width: 100vw; height: 100vh; display: flex; justify-content: center; align-items: center; }
+    </style>
+</head>
+<body>
+    <div id="container"></div>
+    <script>
+        // Inicia o motor do Java 3.0
+        cheerpjInit();
+        // Cria o ecrã do jogo (900x700)
+        cheerpjCreateDisplay(900, 700, document.getElementById("container"));
+        // Executa a classe JogoQuimica do ficheiro Jogo.jar
+        cheerpjRunMain("JogoQuimica", "/app/Jogo.jar");
+    </script>
+</body>
+</html>
